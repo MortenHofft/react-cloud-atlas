@@ -5,6 +5,7 @@ import axios from 'axios';
 import history from './history'
 import Home from './pages/Home';
 import About from './pages/About';
+import HeaderBar from './components/HeaderBar';
 import OccurrenceSearch from './pages/OccurrenceSearch';
 
 const style = {
@@ -20,6 +21,7 @@ export default class extends Component {
     return (
       <Router history={history}>
         <div>
+          <HeaderBar />
           <nav>
             <ul>
               <li>
