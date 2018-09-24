@@ -21,7 +21,9 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "react-occurrence-browser": "github:MortenHofft/react-occurrence-browser"
+    "history": "^4.7.2",
+    "react-occurrence-browser": "github:MortenHofft/react-occurrence-browser",
+    "react-router-dom": "^4.3.1"
   },
   "peerDependencies": {
     "react": "16.x"

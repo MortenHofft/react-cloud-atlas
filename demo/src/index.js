@@ -5,14 +5,27 @@ import {CloudAtlas} from '../../src'
 class Demo extends Component {
   constructor(props) {
     super(props);
-    this.state = {config: {endpoint: '//localhost:9200/fungi', articleUrl: '/testfile.json', title:"Demo atlas"}};
+    this.state = {
+      config: {
+        endpoint: '//localhost:9200/fungi', 
+        articleUrl: '/about.json', 
+        title:"Demo atlas",
+        menu: [
+          {
+            name: 'about',
+            url: '/about.json'
+          },
+          {
+            name: 'latest news story',
+            url: '/news.json'
+          }
+        ]
+      }
+    };
   }
 
   render() {
-    return <div>
-      <h1>react-cloud-atlas Demo</h1>
-      <CloudAtlas config={this.state.config} />
-    </div>
+    return <CloudAtlas config={this.state.config} />
   }
 }
 
