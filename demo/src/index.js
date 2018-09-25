@@ -25,7 +25,7 @@ class Demo extends Component {
   }
 
   render() {
-    return <CloudAtlas config={this.state.config} />
+    return <CloudAtlas config={this.state.config} theme={{colorPrimary: 'pink'}}/>
   }
 }
 

@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import injectSheet from "react-jss";
 
-const styles = {
+const styles = theme => ({
   headerBar: {
     height: "50px",
     width: "100%",
     fontFamily: "Source Sans Pro",
-    background: '#1785fb'
+    background: theme.colorPrimary
   }
-};
+});
 
 export default injectSheet(styles)(
   class extends Component {
